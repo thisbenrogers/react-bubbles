@@ -16,7 +16,9 @@ const BubblePage = () => {
       .catch(err => console.log(err.response))
   }
 
-  getData();
+  useEffect(() => {
+    getData();
+  }, [colorList]);
 
   return (
     <>
